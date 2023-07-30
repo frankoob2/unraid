@@ -1,0 +1,45 @@
+Если вы просто обновились:
+
+    Берете unraider из архива и меняйте его на своей флешке в папке /config
+    Пользуйтесь
+
+Если только решили начать пользоваться:
+
+    Файлы unraider и hook.co кидайте в /config
+    Меняйте файл go в папке в /config, на следующие
+
+#!/bin/bash
+export UNRAID_GUID= ТУТ ВАШ GUID
+export UNRAID_NAME=Tower
+export UNRAID_DATE=1654646400
+export UNRAID_VERSION=Pro
+/lib64/ld-linux-x86-64.so.2 /boot/config/unraider
+# Start the Management Utility
+/usr/local/sbin/emhttp & 
+
+    Сохраняем
+    Пользуемся.       
+    
+------------------------------
+If you just upgraded:
+
+    Take the unraider from the archive and change it on your flash drive in the /config folder
+    enjoy
+
+If you decide to start using:
+
+    Throw unraider and hook.co files in /config
+    Change the go file in the /config folder to the following
+    
+#!/bin/bash
+export UNRAID_GUID= HERE YOUR GUID
+export UNRAID_NAME=Tower
+export UNRAID_DATE=1654646400
+export UNRAID_VERSION=Pro
+/lib64/ld-linux-x86-64.so.2 /boot/config/unraider
+# Start the Management Utility
+/usr/local/sbin/emhttp &         
+
+
+save
+use
